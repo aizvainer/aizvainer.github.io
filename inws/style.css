@@ -1,0 +1,624 @@
+/*#1c3b6a #6cbd45*/
+
+/*Общие стили*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
+}
+body {
+    background-color: #fff;
+}
+h1 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1c3b6a;
+}
+p {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #000;
+    text-transform: none;
+    font-size: 0.75rem;
+}
+h1 + p {
+    margin-top: 1.25rem;
+}
+
+
+/*Стили верхнего колонтитула*/
+header {
+    padding: 2em;
+    background: #fff;
+}
+header > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header > div > div{
+    width: auto;
+    flex: 1 1 auto;
+}
+header a {
+    color: #222;
+}
+#inwlogo {
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+}
+.contacts {
+
+}
+.contacts > div {
+    
+}
+.contacts > div:nth-child(1) {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background-image: url(img/info.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+}
+.contacts > div:nth-child(2) {
+    padding-left: 1rem;
+}
+.contacts a[href^=tel] {
+    font-weight: 500;
+}
+.contacts a[href^=mailto] {
+    font-family: 'Open Sans';
+}
+.langselect {
+    align-self: flex-start;
+}
+.langselect > div {
+    width: auto;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.langselect a {
+    color: #555;
+    font-size: 1.25rem;
+}
+.langselect img {
+    border: 1px solid #bbb;
+    margin-bottom: -0.5rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+.rus {
+    width: 34px;
+    height: 34px;
+    transform: scaleX(1.47) scale(0.7);
+}
+.est {
+    width: 50px;
+    height: 34px;
+    transform: scale(0.7);
+}
+.icon {
+    display: none;
+}
+.icon a {
+    width: 30px;
+    height: 30px;
+    background-image: url(img/menu.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+/*Стили навигационной панели*/
+.mainnav {
+    background: #1c3b6a;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center; 
+}
+.mainnav > div{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.mainnav li {
+    display: inline;
+}
+.mainnav .langselect {
+    display: none;
+}
+.mainnav a {
+    display: inline-block;
+    color: #fff;
+    padding: 1rem 1.5rem;
+}
+.mainnav a:hover {
+    background-color: #6cbd45;
+}
+
+/*Стили блока краткого описания*/
+.briefinfo {
+    background-image: url(img/main-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+}
+.briefinfo > div {
+    max-width: 1200px;
+    margin: 0rem auto;
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+}
+.briefinfo li {
+    width: 70%;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem 1rem 8rem;
+    background-color: rgba(28, 59, 106, 0.8);
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 250%;
+    color: #fff;
+}
+.briefinfo li > div{
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin-left: -15%;
+    margin-bottom: -3%;
+    border-radius: 75px;
+    background: #6cbd45 no-repeat center;
+}
+.briefinfo li:nth-child(1) > div{
+    background-image: url(img/rab-arenda.svg);
+    background-size: 70%;
+}
+.briefinfo li:nth-child(2) > div{
+    background-image: url(img/job-search.svg);
+    background-size: 50%;
+}
+.briefinfo li:nth-child(3) > div{
+    background-image: url(img/build-service.svg);
+    background-size: 100%;
+}
+.briefinfo li > span {
+    padding-left: 2rem;
+}
+
+/*Стили блока введения*/
+.introduction {
+    background-color: #fff;
+}
+.introduction > div {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+.introduction > div > div {
+    flex: 1 1 350px;
+    padding: 0 1rem;
+}
+
+.introduction p {
+    margin: 1rem 0;
+}
+
+.introduction img {
+    display: block;
+    max-width: 100%;
+    width: 400px;
+    margin: 0 auto;
+}
+.introduction > div > div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 500;
+}
+.introduction > div > div:nth-child(3) > div {
+    background-color: #eee;
+    margin: 1rem 0.5rem;
+    line-height: 400%;
+}
+.introduction > div > div:nth-child(3) > div > div {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-left: -1rem;
+    background: #6cbd45 no-repeat center;
+    background-size: 60%;
+    border-radius: 2.75rem;
+}
+.introduction > div > div:nth-child(3) > div:nth-child(1) > div {
+    background-image: url(img/shield.svg);
+
+}
+.introduction > div > div:nth-child(3) > div:nth-child(2) > div {
+   background-image: url(img/easy.svg); 
+}
+.introduction > div > div:nth-child(3) > div:nth-child(3) > div {
+    background-image: url(img/quality.svg);
+}
+.introduction > div > div:nth-child(3) span {
+    padding-left: 2rem;
+}
+
+/*Стили блока услуг*/
+.services {
+    background: #f6f6f6 url(img/inws-back.png) repeat;
+}
+.services > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;   
+}
+.services > div > div:nth-child(1) {
+    margin-bottom: 4rem;
+}
+.services > div > div:nth-child(2) {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.services > div > div:nth-child(2) h1 {
+    color: #000;
+}
+.services > div > div:nth-child(2) p {
+    line-height: 150%;
+}
+.services > div > div:nth-child(2) > div {
+    background-color: #fff;
+    flex: 1 1 300px;
+    text-align: center;
+    margin: 1.5rem 1rem;
+    padding: 4rem 3rem;
+}
+.services a > div {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    margin: 2rem auto;
+    margin-top: -6rem;
+    background: #1c3b6a no-repeat center;
+    background-size: 70%;
+}
+.services > div > div:nth-child(2) div:nth-child(1) div {
+    background-image: url(img/builders.svg);
+    background-size: 60%;
+}
+.services > div > div:nth-child(2) div:nth-child(2) div {
+    background-image: url(img/svarka.svg);
+    background-size: 60%;
+    background-position: 10px 15px;
+}
+.services > div > div:nth-child(2) div:nth-child(3) div {
+    background-image: url(img/electr.svg);
+    background-size: 60%;
+}
+.services > div > div:nth-child(2) div:nth-child(4) div {
+    background-image: url(img/proizvod.svg);
+}
+.services > div > div:nth-child(2) div:nth-child(5) div {
+    background-image: url(img/sklad.svg);
+}
+.services > div > div:nth-child(2) div:nth-child(6) div {
+    background-image: url(img/yborka.svg);
+}
+
+/*Стили ссылки на анкету*/
+.profile {
+    background-image: url(img/arrows.png);
+    background-attachment: local;
+    background-size: cover;
+    text-align: center;
+    font-weight: 700;
+}
+.profile > div {
+    display: inline-block;
+    max-width: 1200px;
+    margin: 10% auto;
+}
+.profile h1 {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.profile a:hover {
+    background-color: #6c9945;
+}
+.profile a {
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+    box-shadow: 6px 6px 1px #1c3b6a;
+    color: #fff;
+    background-color: #6cbd45;
+    line-height: 300%;
+}
+
+/*Стили формы*/
+.formfill {
+    background-color: #fafafa;
+}
+.formfill form {
+    max-width: 1200px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding: 5rem 2rem 5rem 5rem;
+}
+.formfill form > div {
+    flex: 1 0;
+    margin-bottom: 1rem;
+}
+.formfill label {
+    display: inline-block;
+    width: 25%;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-transform: none;
+}
+.formfill form > div > *:nth-child(2):not(textarea) {
+    width: 70%;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-transform: none;
+    height: 2rem;
+    padding: 0.25rem;
+    float: right;
+    border: solid 1px #aaa;
+    border-radius: 3px;
+}
+.formfill option {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-transform: none;
+}
+.formfill label[for=about] {
+    vertical-align: top;
+}
+.formfill textarea {
+    resize: vertical;
+    width: 70%;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-transform: none;
+    padding: 0.25rem;
+    float: right;
+    border: solid 1px #aaa;
+    border-radius: 3px;
+}
+.formfill form > div > *:nth-child(2):focus {
+    outline-offset: -2px;
+    outline-color: #6cbd45;
+}
+.formfill input[type=submit] {
+    float: right;
+    height: 2rem;
+    padding: 0 0.5rem;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-transform: none;
+    background-color: #6cbd45;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/*Стили дополнительной навигации*/
+.subnav {
+    display: block;
+    background-color: #fff;
+    font-weight: 600;
+}
+.subnav a {
+    display: block;
+    padding-bottom: 1rem;
+}
+.subnav > div {
+    max-width: 1200px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+.subnav > div > div {
+    flex: 1 1;
+}
+.subnav > div > div:nth-child(1) {
+    width: 150px;
+    height: 100px;
+    background-image: url(img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: start;
+}
+.subnav > div > div:nth-child(2) a, .subnav > div > div:nth-child(3) a {
+    color: #6cbd45;
+}
+.subnav > div > div:nth-child(4) a, .subnav > div > div:nth-child(5) a {
+    color: #1c3b6a;
+}
+.subnav a[href^=mailto]:link {
+    color: #ef3658;
+}
+
+/*Стили нижнего колонтитула*/
+footer {
+    background-color: #282828;
+}
+footer > div {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0.6rem 3rem 0rem 3rem;
+}
+footer > div > div:nth-child(1) a {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none;
+    color: #fff;
+    float: left;
+}
+footer > div > div:nth-child(2) {
+    float: right;
+}
+footer li {
+    display: inline-block;
+    margin: auto 0.5rem;
+}
+footer ul a {
+    display: block;
+    width: 32px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 260%;
+}
+footer li:nth-child(1) a {
+    background-image: url(img/footer-soc.png);
+    background-position: -28px 0px;
+    background-size: 280%;
+}
+footer li:nth-child(2) a {
+    background-image: url(img/footer-soc.png);
+    background-position: 5px 0px;
+}
+footer li:nth-child(3) a {
+    background-image: url(img/footer-soc.png);
+    background-position: -55px 0px;
+}
+/*-------------------------------------------------------------*/
+
+@media (max-width: 992px) {
+    header {
+        padding: 1rem;
+    }
+    #inwlogo {
+        width: 70px;
+    }
+    .contacts > div:nth-child(1) {
+        display: none;
+    }
+    .contacts > div:nth-child(2) {
+        margin: 0;
+    }
+    .langselect {
+        display: none;
+    }
+    .langselect img {
+        border: none;
+    }
+    .langselect a:last-child {
+        padding-left: 0;
+    }
+    .icon {
+        display: block;
+        margin: 0 auto;
+    }
+    .icon a {
+        display: block;
+    }
+    .mainnav {
+        display: none;
+    }
+    .displaynav {
+        display: block;
+    }
+    .mainnav li  {
+        display: block !important;
+        text-align: left;
+    }
+    .briefinfo li {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .briefinfo > div {
+        padding-top: 5rem;
+        padding-bottom: 10rem;
+    }
+    .briefinfo li {
+        width: 90%;
+        padding: 0;
+    }
+    .briefinfo li > div {
+        display: none;
+    }
+    .subnav > div {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 0;
+        padding-top: 2rem;
+    }
+    .subnav > div > div {
+        margin-bottom: 1rem;
+    }
+    .subnav > div > div:nth-child(1) {
+        flex: 0 0 auto;
+        align-self: center;
+    }
+    .formfill form {
+        padding: 3rem 1rem;
+    }
+    .formfill label {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .formfill form > div {
+        margin-bottom: 2rem;
+    }
+    .formfill form > div > *:nth-child(2) {
+        width: 100% !important;
+    } 
+    
+}
+@media (max-width: 576px) {
+    .briefinfo > div {
+        padding-bottom: 3rem;
+        padding-top: 3rem;
+    }
+    .briefinfo li {
+        width: 100%;
+        font-size: 1rem;
+        line-height: 400%;
+    }
+    .introduction > div > div:nth-child(3) > div {
+        font-size: 0.75rem;
+    }
+    footer > div > div {
+        float: none !important;
+        width: 100%;
+        margin: 0 auto;
+        display: inline-block;
+        text-align: center;
+    }
+    footer a {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    footer ul {
+        margin: 1rem auto;
+    }
+}

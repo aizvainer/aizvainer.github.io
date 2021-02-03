@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Расчёт стоимости - Descor</title>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <ul>
+                    <li><a href="tel:+37255696976">tel: +372 55696976</a></li>
+                    <li><a href="maito:info@descor.ee">info@descor.ee</a></li>
+                    <li>
+                        <a href="#">RUS</a>
+                        <a href="#">EST</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="upper-nav">
+            <div>
+                <a href="index.html"></a>
+                <ul>
+                    <li><a href="index.html"><span>О компании</span></a></li>
+                    <li>
+                        <a href="product.html"><span>Продукция</span></a>
+                        <ul>
+                            <li><a href="#">НАТЯЖНЫЕ ПОТОЛКИ</a></li>
+                            <li><a href="#">ПВХ ПОТОЛКИ</a></li>
+                            <li><a href="#">ДЕКОРИРОВАНИЕ СТЕН</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span>Сравнение</span></a></li>
+                    <li>
+                        <a href="prices.html"><span class="active-link">Цены</span></a>
+                        <ul>
+                            <li><a href="prices.html" class="active-sub">РАБОТА И МАТЕРИАЛЫ</a></li>
+                            <li><a href="#">РАСЧЁТ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><span>Галерея</span></a>
+                        <ul>
+                            <li><a href="#">ТКАНЕВЫЕ НАТЯЖНЫЕ ПОТОЛКИ</a></li>
+                            <li><a href="#">БЕСШОВНЫЕ ТКАНЕВЫЕ СТЕНЫ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span>Контакты</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sub-nav">
+            <div>
+                <div>
+                    <a href="index.html"></a>
+                    <div>
+                        <a href="mailto:infp@descor.ee"></a>
+                        <a href="tel:+37255696976"></a>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <a href="index.html"></a>
+                        <a href="index.html"></a>
+                    </div>
+                    <a id="toggle"></a>
+                </div>
+            </div>
+            <ul id="main-nav">
+                <li><a href="index.html">О компании</a></li>
+                <li class="dropdown-list" id="dropdown-product">
+                    <div><a href="product.html">Продукция</a><a class="expand-button" id="expand-product"></a></div>
+                    <ul>
+                        <li><a href="#">Натяжные потолки</a></li>
+                        <li><a href="#">ПВХ потолки</a></li>
+                        <li><a href="#">Декорирование стен</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Сравнение</a></li>
+                <li class="dropdown-list" id="dropdown-prices">
+                    <div><a href="prices.html">Цены</a><a class="expand-button" id="expand-prices"></a></div>
+                    <ul>
+                        <li><a href="prices.html" >Работа и материалы</a></li>
+                        <li><a href="#">Расчёт</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-list" id="dropdown-gallery">
+                    <div><a href="#">Галерея</a><a class="expand-button" id="expand-gallery"></a></div>
+                    <ul>
+                        <li><a href="#">Тканевые натяжные потолки</a></li>
+                        <li><a href="#">Бесшовные тканевые стены</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Контакты</a></li>
+                <div>
+                    <a href="index.html"></a>
+                    <a href="index.html"></a>
+                </div>
+            </ul>
+        </div>
+
+        <div class="small-nav">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="prices.html">Цены</a></li>
+                <li><a>Работа и материалы</a></li>
+            </ul>
+        </div>
+
+        <div class="prices">
+            <div>
+                <h1>ЦЕНЫ НА РАБОТУ И МАТЕРИАЛЫ</h1>
+                <table class="large-table">
+                    <tr>
+                        <th>НАИМЕНОВАНИЕ РАБОТ</th>
+                        <th>ЕД. ИЗМЕРЕНИЯ</th>
+                        <th>ЦЕНА</th>
+                    </tr>
+                    <tr>
+                        <td>Монтаж полотно + багет (более 10кв.м)</td>
+                        <td>м<sup>2</sup></td>
+                        <td>10.60 €</td>
+                    </tr>
+                    <tr>
+                        <td>Дополнительные углы (более 4-х на 1 помещение)</td>
+                        <td>штука</td>
+                        <td>5.50 €</td>
+                    </tr>
+                    <tr>
+                        <td>Окантовка труб (обход трубы)</td>
+                        <td>штука</td>
+                        <td>5.50 €</td>
+                    </tr>
+                    <tr>
+                        <td>Закладная под люстру «на крючке»</td>
+                        <td>штука</td>
+                        <td>8.00 €</td>
+                    </tr>
+                    <tr>
+                        <td>Точечный светильник (установка + закладная)</td>
+                        <td>штука</td>
+                        <td>8.00 €</td>
+                    </tr>
+                    <tr>
+                        <td>Крепление профиля на керамическую плитку</td>
+                        <td>п.м.</td>
+                        <td>3.50 €</td>
+                    </tr>
+                    <tr>
+                        <td>Брус вспомогательный (деревянный), материал+монтаж</td>
+                        <td>п.м.</td>
+                        <td>7.00 €</td>
+                    </tr>
+                    <tr>
+                        <td>Проводка к точечным светильникам (расстояние между светильниками не более 2м)</td>
+                        <td>точка</td>
+                        <td>4.00 €</td>
+                    </tr>
+                    <tr>
+                        <td>Установка полотна на высоте выше  3-х метров</td>
+                        <td>%</td>
+                        <td>15% от стоимости по договору</td>
+                    </tr>
+                    <tr>
+                        <td>Выезд замерщика (Таллин)</td>
+                        <td>раз</td>
+                        <td>бесплатно</td>
+                    </tr>
+                </table>
+                <table class="large-table">
+                    <tr>
+                        <th>МАТЕРИАЛ</th>
+                        <th>ЕД. ИЗМЕРЕНИЯ</th>
+                        <th>ЦЕНА</th>
+                    </tr>
+                    <tr>
+                        <td>Ткань DESCOR Classic</td>
+                        <td>м<sup>2</sup></td>
+                        <td>14.15 €</td>
+                    </tr>
+                    <tr>
+                        <td>Ткань DESCOR Color</td>
+                        <td>м<sup>2</sup></td>
+                        <td>16.99 €</td>
+                    </tr>
+                    <tr>
+                        <td>Ткань DESCOR Alupigment</td>
+                        <td>м<sup>2</sup></td>
+                        <td>20.89 €</td>
+                    </tr>
+                    <tr>
+                        <td>Ткань DESCOR Acoustic</td>
+                        <td>м<sup>2</sup></td>
+                        <td>19.99 €</td>
+                    </tr>
+                    <tr>
+                        <td>Профиль DESCOR</td>
+                        <td>п.м.</td>
+                        <td>5.88 €</td>
+                    </tr>
+                    <tr>
+                        <td>Матовый ПВХ, ширина 200 (белый или цветной)</td>
+                        <td>м<sup>2</sup></td>
+                        <td>4.85 €</td>
+                    </tr>
+                    <tr>
+                        <td>Матовый фактурный ПВХ, ширина 200 (белый или цветной)</td>
+                        <td>м<sup>2</sup></td>
+                        <td>5.40 €</td>
+                    </tr>
+                    <tr>
+                        <td>Матовый ПВХ, ширина 130 (белый или цветной)</td>
+                        <td>м<sup>2</sup></td>
+                        <td>5.05 €</td>
+                    </tr>
+                    <tr>
+                        <td>Лаковый ПВХ, ширина 180 (белый или цветной)</td>
+                        <td>м<sup>2</sup></td>
+                        <td>5.40 €</td>
+                    </tr>
+                    <tr>
+                        <td>Лаковый ПВХ, ширина 130 (белый или цветной)</td>
+                        <td>м<sup>2</sup></td>
+                        <td>4.70 €</td>
+                    </tr>
+                    <tr>
+                        <td>Перламутровый ПВХ, ширина 130 (цветной)</td>
+                        <td>м<sup>2</sup></td>
+                        <td>9.00 €</td>
+                    </tr>
+                    <tr>
+                        <td>Металлик ПВХ 903, 943, 901, ширина 180 (цветной)</td>
+                        <td>м<sup>2</sup></td>
+                        <td>6.40 €</td>
+                    </tr>
+                    <tr>
+                        <td>Металлик ПВХ 909 и 913, ширина 130 (цветной)</td>
+                        <td>м<sup>2</sup></td>
+                        <td>7.60 €</td>
+                    </tr>
+                    <tr>
+                        <td>ПВХ профиль (настенный или потолочный)</td>
+                        <td>п.м.</td>
+                        <td>5.88 €</td>
+                    </tr>
+                </table>
+                <table class="large-table">
+                    <tr>
+                        <th>ФОТОПЕЧАТЬ (ГЕРМАНИЯ)</th>
+                        <th><div>ЦЕНА ЗА М<sup>2</sup></div></th>
+                    </tr>
+                    <tr>
+                        <td>&lt;1 м<sup>2</sup></td>
+                        <td>76.10 €</td>
+                    </tr>
+                    <tr>
+                        <td>1 м<sup>2</sup> - 6 м<sup>2</sup></td>
+                        <td>51.26 €</td>
+                    </tr>
+                    <tr>
+                        <td>6 м<sup>2</sup> - 20 м<sup>2</sup></td>
+                        <td>39.90 €</td>
+                    </tr>
+                    <tr>
+                        <td>&gt; 20 м<sup>2</sup>2</td>
+                        <td>29.90 €</td>
+                    </tr>
+                </table>
+
+                <table class="small-table">
+                    <tr>
+                        <th>Наименование работ</th>
+                        <td>Монтаж полотно + багет (более 10кв.м)</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>10.60 €</td>
+                    </tr>
+                    <tr>
+                        <th>Наименование работ</th>
+                        <td>Дополнительные углы (более 4-х на 1 помещение)</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>штука</td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>5.50 €</td>
+                    </tr>
+                    <tr>
+                        <th>Наименование работ</th>
+                        <td>Окантовка труб (обход трубы)</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>штука</td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>5.50 €</td>
+                    </tr>
+                    <tr>
+                        <th>Наименование работ</th>
+                        <td>Закладная под люстру «на крючке»</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>штука</td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>8.00 €</td>
+                    </tr>
+                    <tr>
+                        <th>Наименование работ</th>
+                        <td>Точечный светильник (установка + закладная)</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>штука</td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>8.00 €</td>
+                    </tr>
+                    <tr>
+                        <th>Наименование работ</th>
+                        <td>Крепление профиля на керамическую плитку</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>п.м.</td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>3.50 €</td>
+                    </tr>
+                    <tr>
+                        <th>Наименование работ</th>
+                        <td>Брус вспомогательный (деревянный), материал+монтаж</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>п.м.</td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>7.00 €</td>
+                    </tr>
+                    <tr>
+                        <th>Наименование работ</th>
+                        <td>Проводка к точечным светильникам (расстояние между светильниками не более 2м)</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>точка</td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>4.00 €</td>
+                    </tr>
+                    <tr>
+                        <th>Наименование работ</th>
+                        <td>Установка полотна на высоте выше  3-х метров</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>%</td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>15% от стоимости по договору</td>
+                    </tr>
+                    <tr>
+                        <th>Наименование работ</th>
+                        <td>Выезд замерщика (Таллин)</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>раз</td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>бесплатно</td>
+                    </tr>
+                </table>
+                <table class="small-table">
+                    <tr>
+                        <th>Материал</th>
+                        <td>Ткань DESCOR Classic</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>14.15 €</td>
+                    </tr>
+                    <tr>
+                        <th>Материал</th>
+                        <td>Ткань DESCOR Color</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>16.99 €</td>
+                    </tr>
+                    <tr>
+                        <th>Материал</th>
+                        <td>Ткань DESCOR Alupigment</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>20.89 €</td>
+                    </tr>
+                    <tr>
+                        <th>Материал</th>
+                        <td>Ткань DESCOR Acoustic</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>19.99 €</td>
+                    </tr>
+                    <tr>
+                        <th>Материал</th>
+                        <td>Профиль DESCOR</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>п.м.</td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>5.88 €</td>
+                    </tr>
+                    <tr>
+                        <th>Материал</th>
+                        <td>Матовый ПВХ, ширина 200 (белый или цветной)</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>4.85 €</td>
+                    </tr>
+                    <tr>
+                        <th>Материал</th>
+                        <td>Матовый фактурный ПВХ, ширина 200 (белый или цветной)</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>5.40 €</td>
+                    </tr>
+                    <tr>
+                        <th>Материал</th>
+                        <td>Матовый ПВХ, ширина 130 (белый или цветной)</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>5.05 €</td>
+                    </tr>
+                    <tr>
+                        <th>Материал</th>
+                        <td>Лаковый ПВХ, ширина 180 (белый или цветной)</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>5.40 €</td>
+                    </tr>
+                    <tr>
+                        <th>Материал</th>
+                        <td>Лаковый ПВХ, ширина 130 (белый или цветной)</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>4.70 €</td>
+                    </tr>
+                    <tr>
+                        <th>Материал</th>
+                        <td>Перламутровый ПВХ, ширина 130 (цветной)</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>9.00 €</td>
+                    </tr>
+                    <tr>
+                        <th>Материал</th>
+                        <td>Металлик ПВХ 903, 943, 901, ширина 180 (цветной)</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>6.40 €</td>
+                    </tr>
+                    <tr>
+                        <th>Материал</th>
+                        <td>Металлик ПВХ 909 и 913, ширина 130 (цветной)</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>7.60 €</td>
+                    </tr>
+                    <tr>
+                        <th>Материал</th>
+                        <td>ПВХ профиль (настенный или потолочный)</td>
+                    </tr>
+                    <tr>
+                        <th>Ед. измерения</th>
+                        <td>п.м.</td>
+                    </tr>
+                    <tr>
+                        <th>Цена</th>
+                        <td>5.88 €</td>
+                    </tr>
+                </table>
+                <table class="small-table">
+                    <tr>
+                        <th>Фотопечать (Германия)</th>
+                        <td>&lt; 1 м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th>Цена за м<sup>2</sup></th>
+                        <td>76.10 €</td>
+                    </tr>
+                    <tr>
+                        <th>Фотопечать (Германия)</th>
+                        <td>1 м<sup>2</sup> - 6 м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th>Цена за м<sup>2</sup></th>
+                        <td>51.26 €</td>
+                    </tr>
+                    <tr>
+                        <th>Фотопечать (Германия)</th>
+                        <td>6 м<sup>2</sup> - 20 м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th>Цена за м<sup>2</sup></th>
+                        <td>39.90 €</td>
+                    </tr>
+                    <tr>
+                        <th>Фотопечать (Германия)</th>
+                        <td>&gt; 20 м<sup>2</sup></td>
+                    </tr>
+                    <tr>
+                        <th>Цена за м<sup>2</sup></th>
+                        <td>29.90 €</td>
+                    </tr>
+                </table>
+                <div>
+                    <h2>ПРИМЕЧАНИЕ:</h2>
+                    <p>Материалы и работы, не вошедшие в данный прайс-лист, оговариваются отдельно. (доставка и сборка строительных лесов, защитные покрытия)</p>
+                    <p>Обращаем Ваше внимание на то, что при расчёте полотна необходимо учитывать технологический припуск по 10 см с каждой стороны.</p>
+                    <h2>КАК ПОЛУЧАЕТСЯ ОКОНЧАТЕЛЬНАЯ ЦЕНА НА ПОТОЛОК?</h2>
+                    <p>Для того,чтобы установить натяжной потолок Вам потребуется приобрести полотно, багет и вызвать установщика.</p>
+                    <p>Цена за потолок будет складываться из стоимости материалов (ткань + багет), цены за установку и стоимости дополнительных работ. Дополнительные работы описаны в приведённой выше таблице.</p>
+                    <b>ЦЕНЫ В ЕВРО И СОДЕРЖАТ НДС 20% </b>
+                    <br>
+                    <b>СКИДКИ ПРЕДУСМОТРЕНЫ ПРИ ЗАКАЗЕ СВЫШЕ 30М<sup>2</sup></b>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-nav">
+            <div>
+                <a href="index.html"></a>
+                <div>
+                    <div>
+                        <h1>КАРТА САЙТА</h1>
+                        <ul>
+                            <li><a href="index.html">О компании</a></li>
+                            <li><a href="product.html">Продукция</a></li>
+                            <li><a href="index.html">Сравнение</a></li>
+                            <li><a href="prices.html">Цены</a></li>
+                            <li><a href="index.html">Галерея</a></li>
+                            <li><a href="index.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1>НАШИ КОНТАКТЫ</h1>
+                        <ul>
+                            <li><a href="tel:+37255696976"><div></div><span>+372 55696976</span></a></li>
+                            <li><a href="mailto:info@descor.ee"><div></div><span>info@descor.ee</span></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1>МЫ В СОЦ СЕТЯХ:</h1>
+                        <ul>
+                            <li><a href="https://vk.com" target="_blank"></a></li>
+                            <li><a href="https://facebook.com" target="_blank"></a></li>
+                            <li><a href="https://instagram.com" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div>
+                <a href="https://multiweb.ee" target="_blank">Multiweb OÜ Solutions</a>
+                <div>Descor &copy; 2020 Все права защищены.</div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
