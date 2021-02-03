@@ -70,11 +70,15 @@ main > div > div:nth-child(even) p {
 	order: 1;
 }
 
-main > div > div:nth-child(even) p {}
+main > div > div:nth-child(odd) p {
+	text-align: right;
+}
 
 main a {
+	position: relative;
+	overflow: hidden;
 	transition: border-color 0.25s linear;
-	border: 2px solid var(--alm-white);
+	border: 4px solid var(--alm-white);
 	border-radius: 15px;
 }
 
@@ -83,10 +87,31 @@ main a:hover {
 	border-color: var(--orng);
 }
 
+.descor:hover { border-color: #ed2d2d; }
+.ftea:hover { border-color:#ab0c0c; }
+.inws:hover { border-color: #1c3b6a; }
+.haigla:hover { border-color: #44bed0; }
+.auto:hover { border-color: #9dc635; }
+.vedu:hover { border-color: #e04927; }
+
+main a div {
+	position: absolute;
+	top: -200px;
+	left: -200px;
+	width: 1000px;
+	height: 1000px;
+	opacity: 1;
+	transition: opacity 0.5s;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+main a:hover div {
+	opacity: 0;
+	transition: opacity 0.5s;
+}
 
 main img {
 	width: 100%;
-	border-radius: 15px;
 }
 
 footer  ul {
@@ -117,7 +142,7 @@ footer a:hover {
 	}
 
 	main p {
-		text-align: center;
+		text-align: center !important;
 		padding: 2rem 0;
 	}
 
